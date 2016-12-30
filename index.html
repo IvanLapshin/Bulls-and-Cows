@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+  <!-- By Ivan Lapshin -->
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <button id="btn_newGame" onClick="location.reload();">New Game</button>
+    <br>
+    <p id="validationMessage"></p>
+    Input <input id="attempt" type="text" maxlength="4"/>
+    <button id="btn_attempt" onClick="makeAttempt()">Try</button>
+    <p id="winMessage"></p>
+    <table id="gameProgressTable" border="0">
+      <caption>Game progress</caption>
+      <tr>
+        <th>Attempt №</th>
+        <th>Guess</th>
+        <th>Result</th>
+      </tr>
+      <script>init();</script>
+    </table> 
+  </body>
+</html>
